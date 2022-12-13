@@ -34,6 +34,6 @@ class AnimalsController < ApplicationController
     end
     private
     def animal_params
-        params.require(:animal).permit(:common_name, :scientific binomial)
+        params.require(:animal).permit(:common_name, :scientific_binomial)
     end
 end
