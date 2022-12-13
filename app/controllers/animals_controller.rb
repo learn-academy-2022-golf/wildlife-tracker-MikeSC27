@@ -12,7 +12,7 @@ class AnimalsController < ApplicationController
         if animal.valid?
             render json: animal
         else
-        render json: animal.errors
+            render json: animal.errors
         end
     end
     def update
@@ -21,7 +21,7 @@ class AnimalsController < ApplicationController
         if animal.valid?
             render json: animal
         else
-        render json: animal.errors
+            render json: animal.errors
         end
     end
     def destroy
@@ -29,7 +29,7 @@ class AnimalsController < ApplicationController
         if animal.destroy
             render json: animal
         else
-        render json: animal.errors
+            render json: animal.errors
         end
     end
     private
